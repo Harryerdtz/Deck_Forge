@@ -1,0 +1,16 @@
+{
+  "name": "deckforge",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Ein Pixel-Deckbuilding-Roguelike als installierbare PWA",
+  "scripts": {
+    "start": "python3 -m http.server 4173 --bind 127.0.0.1",
+    "test": "node tests/engine.test.js && node tests/fuzz.test.js",
+    "test:engine": "node tests/engine.test.js",
+    "test:fuzz": "node tests/fuzz.test.js",
+    "test:browser": "node tests/browser.test.js",
+    "test:screens": "node tests/browser.screens.test.js",
+    "test:offline": "node tests/offline.test.js",
+    "icons": "python3 tools/make_icons.py"
+  }
+}

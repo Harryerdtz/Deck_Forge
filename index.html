@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <meta name="theme-color" content="#0a0c12">
+  <meta name="description" content="DeckForge - ein dunkles Pixel-Deckbuilding-Roguelike im Stil von Slay the Spire.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="DeckForge">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>DeckForge</title>
+</head>
+<body>
+  <div id="app">
+    <header id="topbar" class="topbar hidden" aria-label="Spielstatus"></header>
+    <main id="screen" class="screen" aria-live="polite"></main>
+    <div id="toast" class="toast hidden" role="status"></div>
+    <div id="tooltip" class="tooltip hidden" role="tooltip"></div>
+    <div id="modal" class="modal hidden" aria-modal="true" role="dialog">
+      <div class="modal-frame">
+        <div class="modal-head">
+          <h2 id="modal-title">Karten</h2>
+          <button id="modal-close" class="icon-button" aria-label="Schliessen">X</button>
+        </div>
+        <div id="modal-body" class="modal-body"></div>
+      </div>
+    </div>
+    <div class="scanlines" aria-hidden="true"></div>
+  </div>
+  <noscript>DeckForge benoetigt JavaScript.</noscript>
+  <script src="js/sprites.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
